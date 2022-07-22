@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Coverage for mava/adders/reverb/base.py: 33%</title>
+    <title>Coverage for mava/adders/reverb/base.py: 52%</title>
     <link rel="icon" sizes="32x32" href="favicon_32.png">
     <link rel="stylesheet" href="style.css" type="text/css">
     <script type="text/javascript" src="coverage_html.js" defer></script>
@@ -12,7 +12,7 @@
     <div class="content">
         <h1>
             <span class="text">Coverage for </span><b>mava/adders/reverb/base.py</b>:
-            <span class="pc_cov">33%</span>
+            <span class="pc_cov">52%</span>
         </h1>
         <aside id="help_panel_wrapper">
             <input id="help_panel_state" type="checkbox">
@@ -55,8 +55,8 @@
         </aside>
         <h2>
             <span class="text">126 statements &nbsp;</span>
-            <button type="button" class="run button_toggle_run" value="run" data-shortcut="r" title="Toggle lines run">42<span class="text"> run</span></button>
-            <button type="button" class="mis show_mis button_toggle_mis" value="mis" data-shortcut="m" title="Toggle lines missing">84<span class="text"> missing</span></button>
+            <button type="button" class="run button_toggle_run" value="run" data-shortcut="r" title="Toggle lines run">66<span class="text"> run</span></button>
+            <button type="button" class="mis show_mis button_toggle_mis" value="mis" data-shortcut="m" title="Toggle lines missing">60<span class="text"> missing</span></button>
             <button type="button" class="exc show_exc button_toggle_exc" value="exc" data-shortcut="x" title="Toggle lines excluded">0<span class="text"> excluded</span></button>
         </h2>
         <p class="text">
@@ -65,7 +65,7 @@
             <a id="nextFileLink" class="nav" href="d_45933ec2aaea21b1_episode_py.html">&#xbb; next</a>
             &nbsp; &nbsp; &nbsp;
             <a class="nav" href="https://coverage.readthedocs.io">coverage.py v6.4.1</a>,
-            created at 2022-06-17 08:41 +0200
+            created at 2022-07-21 16:46 +0200
         </p>
         <aside class="hidden">
             <button type="button" class="button_next_chunk" data-shortcut="j"/>
@@ -255,7 +255,7 @@
     <p class="pln"><span class="n"><a id="t173" href="#t173">173</a></span><span class="t"><span class="str">            table_priorities: A dictionary that maps table names to priorities.</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t174" href="#t174">174</a></span><span class="t"><span class="str">        """</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t175" href="#t175">175</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
-    <p class="mis show_mis"><span class="n"><a id="t176" href="#t176">176</a></span><span class="t">        <span class="key">if</span> <span class="nam">self</span><span class="op">.</span><span class="nam">_table_network_config</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t176" href="#t176">176</a></span><span class="t">        <span class="key">if</span> <span class="nam">self</span><span class="op">.</span><span class="nam">_table_network_config</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t177" href="#t177">177</a></span><span class="t">            <span class="com"># This if statement activates if the table_network_config</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t178" href="#t178">178</a></span><span class="t">            <span class="com"># is specified. If it is not the write_experience_to_tables</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t179" href="#t179">179</a></span><span class="t">            <span class="com"># function defaults back to just writing the entire</span>&nbsp;</span><span class="r"></span></p>
@@ -437,19 +437,19 @@
     <p class="pln"><span class="n"><a id="t355" href="#t355">355</a></span><span class="t">        <span class="key">else</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t356" href="#t356">356</a></span><span class="t">            <span class="com"># Default setting (deprecate this) with only one table. In this setting</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t357" href="#t357">357</a></span><span class="t">            <span class="com"># we write the entire trajectory to that table.</span>&nbsp;</span><span class="r"></span></p>
-    <p class="mis show_mis"><span class="n"><a id="t358" href="#t358">358</a></span><span class="t">            <span class="key">for</span> <span class="nam">table_name</span><span class="op">,</span> <span class="nam">priority</span> <span class="key">in</span> <span class="nam">table_priorities</span><span class="op">.</span><span class="nam">items</span><span class="op">(</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p class="mis show_mis"><span class="n"><a id="t359" href="#t359">359</a></span><span class="t">                <span class="nam">self</span><span class="op">.</span><span class="nam">_writer</span><span class="op">.</span><span class="nam">create_item</span><span class="op">(</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t358" href="#t358">358</a></span><span class="t">            <span class="key">for</span> <span class="nam">table_name</span><span class="op">,</span> <span class="nam">priority</span> <span class="key">in</span> <span class="nam">table_priorities</span><span class="op">.</span><span class="nam">items</span><span class="op">(</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t359" href="#t359">359</a></span><span class="t">                <span class="nam">self</span><span class="op">.</span><span class="nam">_writer</span><span class="op">.</span><span class="nam">create_item</span><span class="op">(</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t360" href="#t360">360</a></span><span class="t">                    <span class="nam">table</span><span class="op">=</span><span class="nam">table_name</span><span class="op">,</span> <span class="nam">priority</span><span class="op">=</span><span class="nam">priority</span><span class="op">,</span> <span class="nam">trajectory</span><span class="op">=</span><span class="nam">trajectory</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t361" href="#t361">361</a></span><span class="t">                <span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t362" href="#t362">362</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t363" href="#t363">363</a></span><span class="t">        <span class="com"># Flush the writer.</span>&nbsp;</span><span class="r"></span></p>
-    <p class="mis show_mis"><span class="n"><a id="t364" href="#t364">364</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">_writer</span><span class="op">.</span><span class="nam">flush</span><span class="op">(</span><span class="nam">self</span><span class="op">.</span><span class="nam">_max_in_flight_items</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t364" href="#t364">364</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">_writer</span><span class="op">.</span><span class="nam">flush</span><span class="op">(</span><span class="nam">self</span><span class="op">.</span><span class="nam">_max_in_flight_items</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t365" href="#t365">365</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t366" href="#t366">366</a></span><span class="t">    <span class="key">def</span> <span class="nam">add_first</span><span class="op">(</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t367" href="#t367">367</a></span><span class="t">        <span class="nam">self</span><span class="op">,</span> <span class="nam">timestep</span><span class="op">:</span> <span class="nam">dm_env</span><span class="op">.</span><span class="nam">TimeStep</span><span class="op">,</span> <span class="nam">extras</span><span class="op">:</span> <span class="nam">Dict</span><span class="op">[</span><span class="nam">str</span><span class="op">,</span> <span class="nam">types</span><span class="op">.</span><span class="nam">NestedArray</span><span class="op">]</span> <span class="op">=</span> <span class="op">{</span><span class="op">}</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t368" href="#t368">368</a></span><span class="t">    <span class="op">)</span> <span class="op">-></span> <span class="key">None</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t369" href="#t369">369</a></span><span class="t">        <span class="str">"""Record the first observation of a trajectory."""</span>&nbsp;</span><span class="r"></span></p>
-    <p class="mis show_mis"><span class="n"><a id="t370" href="#t370">370</a></span><span class="t">        <span class="key">if</span> <span class="key">not</span> <span class="nam">timestep</span><span class="op">.</span><span class="nam">first</span><span class="op">(</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t370" href="#t370">370</a></span><span class="t">        <span class="key">if</span> <span class="key">not</span> <span class="nam">timestep</span><span class="op">.</span><span class="nam">first</span><span class="op">(</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p class="mis show_mis"><span class="n"><a id="t371" href="#t371">371</a></span><span class="t">            <span class="key">raise</span> <span class="nam">ValueError</span><span class="op">(</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t372" href="#t372">372</a></span><span class="t">                <span class="str">"adder.add_first with an initial timestep (i.e. one for "</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t373" href="#t373">373</a></span><span class="t">                <span class="str">"which timestep.first() is True"</span>&nbsp;</span><span class="r"></span></p>
@@ -457,19 +457,19 @@
     <p class="pln"><span class="n"><a id="t375" href="#t375">375</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t376" href="#t376">376</a></span><span class="t">        <span class="com"># Record the next observation but leave the history buffer row open by</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t377" href="#t377">377</a></span><span class="t">        <span class="com"># passing `partial_step=True`.</span>&nbsp;</span><span class="r"></span></p>
-    <p class="mis show_mis"><span class="n"><a id="t378" href="#t378">378</a></span><span class="t">        <span class="nam">add_dict</span> <span class="op">=</span> <span class="nam">dict</span><span class="op">(</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t378" href="#t378">378</a></span><span class="t">        <span class="nam">add_dict</span> <span class="op">=</span> <span class="nam">dict</span><span class="op">(</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t379" href="#t379">379</a></span><span class="t">            <span class="nam">observations</span><span class="op">=</span><span class="nam">timestep</span><span class="op">.</span><span class="nam">observation</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t380" href="#t380">380</a></span><span class="t">            <span class="nam">start_of_episode</span><span class="op">=</span><span class="nam">timestep</span><span class="op">.</span><span class="nam">first</span><span class="op">(</span><span class="op">)</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t381" href="#t381">381</a></span><span class="t">        <span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t382" href="#t382">382</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
-    <p class="mis show_mis"><span class="n"><a id="t383" href="#t383">383</a></span><span class="t">        <span class="key">if</span> <span class="nam">self</span><span class="op">.</span><span class="nam">_use_next_extras</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p class="mis show_mis"><span class="n"><a id="t384" href="#t384">384</a></span><span class="t">            <span class="nam">add_dict</span><span class="op">[</span><span class="str">"extras"</span><span class="op">]</span> <span class="op">=</span> <span class="nam">extras</span>&nbsp;</span><span class="r"></span></p>
-    <p class="mis show_mis"><span class="n"><a id="t385" href="#t385">385</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">_writer</span><span class="op">.</span><span class="nam">append</span><span class="op">(</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t383" href="#t383">383</a></span><span class="t">        <span class="key">if</span> <span class="nam">self</span><span class="op">.</span><span class="nam">_use_next_extras</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t384" href="#t384">384</a></span><span class="t">            <span class="nam">add_dict</span><span class="op">[</span><span class="str">"extras"</span><span class="op">]</span> <span class="op">=</span> <span class="nam">extras</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t385" href="#t385">385</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">_writer</span><span class="op">.</span><span class="nam">append</span><span class="op">(</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t386" href="#t386">386</a></span><span class="t">            <span class="nam">add_dict</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t387" href="#t387">387</a></span><span class="t">            <span class="nam">partial_step</span><span class="op">=</span><span class="key">True</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t388" href="#t388">388</a></span><span class="t">        <span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t389" href="#t389">389</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
-    <p class="mis show_mis"><span class="n"><a id="t390" href="#t390">390</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">_add_first_called</span> <span class="op">=</span> <span class="key">True</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t390" href="#t390">390</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">_add_first_called</span> <span class="op">=</span> <span class="key">True</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t391" href="#t391">391</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t392" href="#t392">392</a></span><span class="t">    <span class="key">def</span> <span class="nam">add</span><span class="op">(</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t393" href="#t393">393</a></span><span class="t">        <span class="nam">self</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
@@ -478,11 +478,11 @@
     <p class="pln"><span class="n"><a id="t396" href="#t396">396</a></span><span class="t">        <span class="nam">next_extras</span><span class="op">:</span> <span class="nam">Dict</span><span class="op">[</span><span class="nam">str</span><span class="op">,</span> <span class="nam">types</span><span class="op">.</span><span class="nam">NestedArray</span><span class="op">]</span> <span class="op">=</span> <span class="op">{</span><span class="op">}</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t397" href="#t397">397</a></span><span class="t">    <span class="op">)</span> <span class="op">-></span> <span class="key">None</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t398" href="#t398">398</a></span><span class="t">        <span class="str">"""Record an action and the following timestep."""</span>&nbsp;</span><span class="r"></span></p>
-    <p class="mis show_mis"><span class="n"><a id="t399" href="#t399">399</a></span><span class="t">        <span class="key">if</span> <span class="key">not</span> <span class="nam">self</span><span class="op">.</span><span class="nam">_add_first_called</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t399" href="#t399">399</a></span><span class="t">        <span class="key">if</span> <span class="key">not</span> <span class="nam">self</span><span class="op">.</span><span class="nam">_add_first_called</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p class="mis show_mis"><span class="n"><a id="t400" href="#t400">400</a></span><span class="t">            <span class="key">raise</span> <span class="nam">ValueError</span><span class="op">(</span><span class="str">"adder.add_first must be called before adder.add."</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t401" href="#t401">401</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t402" href="#t402">402</a></span><span class="t">        <span class="com"># Add the timestep to the buffer.</span>&nbsp;</span><span class="r"></span></p>
-    <p class="mis show_mis"><span class="n"><a id="t403" href="#t403">403</a></span><span class="t">        <span class="nam">current_step</span> <span class="op">=</span> <span class="nam">dict</span><span class="op">(</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t403" href="#t403">403</a></span><span class="t">        <span class="nam">current_step</span> <span class="op">=</span> <span class="nam">dict</span><span class="op">(</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t404" href="#t404">404</a></span><span class="t">            <span class="com"># Observations was passed at the previous add call.</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t405" href="#t405">405</a></span><span class="t">            <span class="nam">actions</span><span class="op">=</span><span class="nam">actions</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t406" href="#t406">406</a></span><span class="t">            <span class="nam">rewards</span><span class="op">=</span><span class="nam">next_timestep</span><span class="op">.</span><span class="nam">reward</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
@@ -490,34 +490,34 @@
     <p class="pln"><span class="n"><a id="t408" href="#t408">408</a></span><span class="t">            <span class="com"># Start of episode indicator was passed at the previous add call.</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t409" href="#t409">409</a></span><span class="t">        <span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t410" href="#t410">410</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
-    <p class="mis show_mis"><span class="n"><a id="t411" href="#t411">411</a></span><span class="t">        <span class="key">if</span> <span class="key">not</span> <span class="nam">self</span><span class="op">.</span><span class="nam">_use_next_extras</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t411" href="#t411">411</a></span><span class="t">        <span class="key">if</span> <span class="key">not</span> <span class="nam">self</span><span class="op">.</span><span class="nam">_use_next_extras</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p class="mis show_mis"><span class="n"><a id="t412" href="#t412">412</a></span><span class="t">            <span class="nam">current_step</span><span class="op">[</span><span class="str">"extras"</span><span class="op">]</span> <span class="op">=</span> <span class="nam">next_extras</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t413" href="#t413">413</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
-    <p class="mis show_mis"><span class="n"><a id="t414" href="#t414">414</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">_writer</span><span class="op">.</span><span class="nam">append</span><span class="op">(</span><span class="nam">current_step</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t414" href="#t414">414</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">_writer</span><span class="op">.</span><span class="nam">append</span><span class="op">(</span><span class="nam">current_step</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t415" href="#t415">415</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t416" href="#t416">416</a></span><span class="t">        <span class="com"># Record the next observation and write.</span>&nbsp;</span><span class="r"></span></p>
-    <p class="mis show_mis"><span class="n"><a id="t417" href="#t417">417</a></span><span class="t">        <span class="nam">next_step</span> <span class="op">=</span> <span class="nam">dict</span><span class="op">(</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t417" href="#t417">417</a></span><span class="t">        <span class="nam">next_step</span> <span class="op">=</span> <span class="nam">dict</span><span class="op">(</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t418" href="#t418">418</a></span><span class="t">            <span class="nam">observations</span><span class="op">=</span><span class="nam">next_timestep</span><span class="op">.</span><span class="nam">observation</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t419" href="#t419">419</a></span><span class="t">            <span class="nam">start_of_episode</span><span class="op">=</span><span class="nam">next_timestep</span><span class="op">.</span><span class="nam">first</span><span class="op">(</span><span class="op">)</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t420" href="#t420">420</a></span><span class="t">        <span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t421" href="#t421">421</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
-    <p class="mis show_mis"><span class="n"><a id="t422" href="#t422">422</a></span><span class="t">        <span class="key">if</span> <span class="nam">self</span><span class="op">.</span><span class="nam">_use_next_extras</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p class="mis show_mis"><span class="n"><a id="t423" href="#t423">423</a></span><span class="t">            <span class="nam">next_step</span><span class="op">[</span><span class="str">"extras"</span><span class="op">]</span> <span class="op">=</span> <span class="nam">next_extras</span>&nbsp;</span><span class="r"></span></p>
-    <p class="mis show_mis"><span class="n"><a id="t424" href="#t424">424</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">_writer</span><span class="op">.</span><span class="nam">append</span><span class="op">(</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t422" href="#t422">422</a></span><span class="t">        <span class="key">if</span> <span class="nam">self</span><span class="op">.</span><span class="nam">_use_next_extras</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t423" href="#t423">423</a></span><span class="t">            <span class="nam">next_step</span><span class="op">[</span><span class="str">"extras"</span><span class="op">]</span> <span class="op">=</span> <span class="nam">next_extras</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t424" href="#t424">424</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">_writer</span><span class="op">.</span><span class="nam">append</span><span class="op">(</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t425" href="#t425">425</a></span><span class="t">            <span class="nam">next_step</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t426" href="#t426">426</a></span><span class="t">            <span class="nam">partial_step</span><span class="op">=</span><span class="key">True</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t427" href="#t427">427</a></span><span class="t">        <span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t428" href="#t428">428</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
-    <p class="mis show_mis"><span class="n"><a id="t429" href="#t429">429</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">_write</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t429" href="#t429">429</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">_write</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t430" href="#t430">430</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
-    <p class="mis show_mis"><span class="n"><a id="t431" href="#t431">431</a></span><span class="t">        <span class="key">if</span> <span class="nam">next_timestep</span><span class="op">.</span><span class="nam">last</span><span class="op">(</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t431" href="#t431">431</a></span><span class="t">        <span class="key">if</span> <span class="nam">next_timestep</span><span class="op">.</span><span class="nam">last</span><span class="op">(</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t432" href="#t432">432</a></span><span class="t">            <span class="com"># Complete the row by appending zeros to remaining open fields.</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t433" href="#t433">433</a></span><span class="t">            <span class="com"># TODO(acme): remove this when fields are no longer expected to be</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t434" href="#t434">434</a></span><span class="t">            <span class="com"># of equal length on the learner side.</span>&nbsp;</span><span class="r"></span></p>
-    <p class="mis show_mis"><span class="n"><a id="t435" href="#t435">435</a></span><span class="t">            <span class="nam">dummy_step</span> <span class="op">=</span> <span class="nam">tree</span><span class="op">.</span><span class="nam">map_structure</span><span class="op">(</span><span class="nam">np</span><span class="op">.</span><span class="nam">zeros_like</span><span class="op">,</span> <span class="nam">current_step</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p class="mis show_mis"><span class="n"><a id="t436" href="#t436">436</a></span><span class="t">            <span class="nam">self</span><span class="op">.</span><span class="nam">_writer</span><span class="op">.</span><span class="nam">append</span><span class="op">(</span><span class="nam">dummy_step</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p class="mis show_mis"><span class="n"><a id="t437" href="#t437">437</a></span><span class="t">            <span class="nam">self</span><span class="op">.</span><span class="nam">_write_last</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p class="mis show_mis"><span class="n"><a id="t438" href="#t438">438</a></span><span class="t">            <span class="nam">self</span><span class="op">.</span><span class="nam">reset</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t435" href="#t435">435</a></span><span class="t">            <span class="nam">dummy_step</span> <span class="op">=</span> <span class="nam">tree</span><span class="op">.</span><span class="nam">map_structure</span><span class="op">(</span><span class="nam">np</span><span class="op">.</span><span class="nam">zeros_like</span><span class="op">,</span> <span class="nam">current_step</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t436" href="#t436">436</a></span><span class="t">            <span class="nam">self</span><span class="op">.</span><span class="nam">_writer</span><span class="op">.</span><span class="nam">append</span><span class="op">(</span><span class="nam">dummy_step</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t437" href="#t437">437</a></span><span class="t">            <span class="nam">self</span><span class="op">.</span><span class="nam">_write_last</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t438" href="#t438">438</a></span><span class="t">            <span class="nam">self</span><span class="op">.</span><span class="nam">reset</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
 </main>
 <footer>
     <div class="content">
@@ -527,7 +527,7 @@
             <a id="nextFileLink" class="nav" href="d_45933ec2aaea21b1_episode_py.html">&#xbb; next</a>
             &nbsp; &nbsp; &nbsp;
             <a class="nav" href="https://coverage.readthedocs.io">coverage.py v6.4.1</a>,
-            created at 2022-06-17 08:41 +0200
+            created at 2022-07-21 16:46 +0200
         </p>
     </div>
 </footer>
